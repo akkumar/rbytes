@@ -1,4 +1,4 @@
-WAF=node-waf
+WAF=node-gyp
 
 build:
 	@$(WAF) configure build
