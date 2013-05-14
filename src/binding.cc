@@ -122,7 +122,6 @@ Handle<Value> HexToBuf(const Arguments &args) {
   return scope.Close(Integer::NewFromUnsigned(to_write));
 }
 
-extern "C"
 void init(Handle<Object> target) {
   HandleScope scope;
   target->Set(String::NewSymbol("randomBytes"),
@@ -132,3 +131,5 @@ void init(Handle<Object> target) {
   target->Set(String::NewSymbol("hexToBuf"),
           FunctionTemplate::New(HexToBuf)->GetFunction());
 }
+
+NODE_MODULE(binding, init)
