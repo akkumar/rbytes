@@ -32,7 +32,7 @@ Installation
 
     $ npm install rbytes
 
-rbytes requires node version 0.3.0 or higher.
+rbytes requires node version 0.10.0 or higher.
 
 Notes
 -----
